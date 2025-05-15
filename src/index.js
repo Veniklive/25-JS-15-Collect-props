@@ -55,7 +55,6 @@ const email = AddCreateElement("input", {
 const formButtonsDiv = AddCreateElement("div", { class: "form-buttons" });
 
 const formButtonSubmit = AddCreateElement("button", {
-  type: "reset",
   text: "Create account",
 });
 
@@ -82,7 +81,6 @@ class Person {
 }
 
 form.addEventListener("submit", function (event) {
-  event.preventDefault();
   const person = new Person(
     firstName.value,
     lastName.value,
