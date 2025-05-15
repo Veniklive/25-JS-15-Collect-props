@@ -55,6 +55,7 @@ const email = AddCreateElement("input", {
 const formButtonsDiv = AddCreateElement("div", { class: "form-buttons" });
 
 const formButtonSubmit = AddCreateElement("button", {
+  type: "reset",
   text: "Create account",
 });
 
